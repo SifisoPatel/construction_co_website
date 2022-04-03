@@ -105,7 +105,7 @@ h3, h4, h5, h6 {
 .nav-link {
     font-weight: 500;
     margin: 0 10px;
-    color: var(--color-light2);
+    color: var(--color-light2) !important;
 }
 
 .nav-link:hover {
@@ -130,4 +130,234 @@ h3, h4, h5, h6 {
     width: 100%;
     background-color: var(--color-dark);
     z-index: 4;
+}
+
+/* Carousel */
+
+.banner {
+    position: relative;
+}
+
+.banner .owl-theme .item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay-bg {
+    background-color: var(--color-dark);
+    opacity: .6;
+    z-index: 2;
+}
+
+.item .container {
+    position: relative;
+    height: 100%;
+}
+
+.caption {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translate(0, 50%);
+    z-index: 3;
+    text-align: center;
+}
+
+.caption-heading {
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0;
+    color: var(--color-light2);
+    line-height: 1;
+    margin: 10px 0 30px;
+    text-shadow: 0 0 15px #2b2b2b;
+}
+
+/* Carousel nav */
+.custom-nav {
+    background: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    height: auto;
+    z-index: 3;
+}
+
+.owl-prev, 
+.owl-next {
+    position: absolute;
+    height: 100px;
+    color: var(--color-light2);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 8px;
+    font-size: 3em;
+}
+
+.owl-prev {
+    left: 3%;
+}
+
+.owl-next {
+    right: 3%;
+}
+
+/*Welcome*/
+.about-content {
+    padding: 30px 20px;
+}
+
+.about-content p {
+    line-height: 30px;
+}
+
+.about-content li {
+    list-style-type: none;
+    position: relative;
+}
+
+.about-content li h4 {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.about-content li p {
+    font-size: .8em;
+}
+
+.about-content li i {
+    position: absolute;
+    font-size: 2em;
+    color: var(--color-light);
+}
+
+.about-content li h4,
+.about-content li p {
+    margin-left: 50px;
+}
+
+/*Services*/
+.services .row {
+    margin: 0;
+}
+
+.services .box-image {
+    height: 600px;
+}
+
+.box-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.box-image .image {
+    background-size: cover;
+    background-position: center;
+}
+
+.box-image .shadow {
+    background-color: #000;
+    opacity: .8;
+}
+
+.box-image .desc {
+    text-align: center;
+}
+
+.desc h4,
+.desc a,
+.desc a:hover {
+    color: #fff;
+}
+
+.desc h4 {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.desc a {
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: .9em;
+}
+
+.box-image:hover .image {
+    transform: scale(1.1);
+}
+
+.box-image:hover .shadow {
+    opacity: .1;
+}
+
+.box-image:hover .desc * {
+    text-shadow: 1px 1px 10px #080808;
+}
+
+/*Projects*/
+.projects .box-image {
+    height: 200px;
+    margin: 0 auto 30px;
+}
+
+/*Testimonials*/
+.testimonials {
+    background-image: url('../images/testimonials.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    position: relative;
+}
+
+.testimonials:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-dark);
+    opacity: .8;
+}
+
+.testimonials h1 {
+    color: var(--color-light2);
+}
+
+.testimonial {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.testimonial:hover img {
+    transform: scale(1.1);
+}
+
+.testimonial img {
+    max-width: 100px;
+    float: left;
+    margin: 5px 0 0 5px;
+}
+
+.testimonial-content * {
+    color: var(--color-light2);
+}
+
+.testimonial-content {
+    margin-left: 120px;
+    color: var(--color-light);
+}
+.testimonial-content p {
+    font-size: 1.2rem;
+}
+
+.testimonial-content h4 {
+    font-weight: 500;
+}
+
+.testimonial-content h5 {
+    font-size: .9em;
 }
