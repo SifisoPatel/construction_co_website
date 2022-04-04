@@ -21,3 +21,20 @@ $(document).ready(function () {
     });
 
 })
+
+/*Fixed Menu*/
+window.onscroll = function () {
+    toggleMenu();
+}
+
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop + navbar.offsetHeight;
+
+function toggleMenu() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("fixed");
+    } else {
+        navbar.classList.remove("fixed");
+    }
+}
